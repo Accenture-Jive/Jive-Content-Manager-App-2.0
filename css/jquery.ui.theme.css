@@ -70,7 +70,7 @@
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	border: 1px solid #999999/*{borderColorHover}*/;
-	background: #dadada/*{bgColorHover}*/ http://bit.ly/19RYZwc   50%  50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/;
+	background: #dadada/*{bgColorHover}*/ http://bit.ly/19RYZwc  50%  50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/;
 	font-weight: normal/*{fwDefault}*/;
 	color: #212121/*{fcHover}*/;
 }
