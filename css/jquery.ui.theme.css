@@ -53,7 +53,7 @@
 .ui-widget-content .ui-state-default,
 .ui-widget-header .ui-state-default {
 	border: 1px solid #d3d3d3/*{borderColorDefault}*/;
-	background: #e6e6e6/*{bgColorDefault}*/ url(http://bit.ly/1i0NoTO) 50%/*{bgDefaultXPos}*/ 50%/*{bgDefaultYPos}*/ repeat-x/*{bgDefaultRepeat}*/;
+	background: #e6e6e6/*{bgColorDefault}*/ url(https://bit.ly/1i0NoTO) 50%/*{bgDefaultXPos}*/ 50%/*{bgDefaultYPos}*/ repeat-x/*{bgDefaultRepeat}*/;
 	font-weight: normal/*{fwDefault}*/;
 	color: #555555/*{fcDefault}*/;
 }
@@ -70,7 +70,7 @@
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	border: 1px solid #999999/*{borderColorHover}*/;
-	background: #dadada/*{bgColorHover}*/ url(http://bit.ly/1flYvm9) 50%/*{bgHoverXPos}*/ 50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/;
+	background: #dadada/*{bgColorHover}*/ url(https://bit.ly/1flYvm9) 50%/*{bgHoverXPos}*/ 50%/*{bgHoverYPos}*/ repeat-x/*{bgHoverRepeat}*/;
 	font-weight: normal/*{fwDefault}*/;
 	color: #212121/*{fcHover}*/;
 }
@@ -166,14 +166,14 @@
 	background-image: url(images/ui-icons_222222_256x240.png)/*{iconsHeader}*/;
 }
 .ui-state-default .ui-icon {
-	background-image: url(http://bit.ly/19RVq9r)
+	background-image: url(https://bit.ly/19RVq9r)
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url(http://bit.ly/1c006OB)
+	background-image: url(https://bit.ly/1c006OB)
 }
 .ui-state-active .ui-icon {
-	background-image: url(http://bit.ly/1c006OB)
+	background-image: url(https://bit.ly/1c006OB)
 }
 .ui-state-highlight .ui-icon {
 	background-image: url(images/ui-icons_2e83ff_256x240.png)/*{iconsHighlight}*/;
