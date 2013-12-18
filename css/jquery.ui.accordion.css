@@ -48,14 +48,3 @@ html { font-size: 62.5%; }
 	text-decoration: none;
 	list-style: none;
 }
-
-#wrapper {
-    border-style:solid;
-    height:100px;
-    width:200px;
-    display:table-cell;
-    vertical-align:middle;
-}
-#dropdown { 
-   width:80px;
-}

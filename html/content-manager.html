@@ -26,21 +26,30 @@
 <body>
 
 <div id="accordion">
-	<h3>Section 1</h3>
-	<div id="wrapper">
-<select name="source_place" id="from_place" onchange="javascript:fromPlace();">  
+	<h3>Copy</h3>
+	<div>
+	
+<label id="from_label" style = "font-size:12px;width:120px;margin:0px 0px 0px 200px;">Copy From:</label>	
+<select name="source_place" id="from_place" onchange="javascript:fromPlace();" style = "font-size:12px;width:120px;margin:50px 0px 0px 0px;">  
 <option value="select_one">Select Place</option>
 <option value="select_space">Select Space</option>
 <option value="select_group">Select Group</option>
 <option value="select_project">Select Project</option>
 </select>
+<label id="to_label" style="font-size:12px;width:120px;margin:0px 0px 0px 200px;">Copy To:</label>
+<select name="source_place" id="to_place" onchange="javascript:toPlace();" style = "font-size:12px;width:120px;margin:50px 0px 0px 200px;">  
+<option value="select_to">Select Place</option>
+<option value="to_space">Select Space</option>
+<option value="to_group">Select Group</option>
+<option value="to_project">Select Project</option>
+</select>
 
 	</div>
-	<h3>Section 2</h3>
+	<h3>Move</h3>
 	<div>
 		<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
 	</div>
-	<h3>Section 3</h3>
+	<h3>Delete</h3>
 	<div>
 		<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
 		<ul>
@@ -49,7 +58,20 @@
 			<li>List item three</li>
 		</ul>
 	</div>
-	<h3>Section 4</h3>
+	<h3>Upload</h3>
+	<div>
+		<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+	</div>
+	<h3>Download</h3>
+	<div>
+		<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+	</div>	
+	<h3>Manage Tags</h3>
+	<div>
+		<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+	</div>
+	</div>	
+	<h3>Manage Categories</h3>
 	<div>
 		<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
 	</div>
