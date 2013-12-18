@@ -166,14 +166,14 @@
 	background-image: url(images/ui-icons_222222_256x240.png)/*{iconsHeader}*/;
 }
 .ui-state-default .ui-icon {
-	background-image: url(images/ui-icons_888888_256x240.png)/*{iconsDefault}*/;
+	background-image: http://bit.ly/1fEbsZe ;
 }
 .ui-state-hover .ui-icon,
 .ui-state-focus .ui-icon {
-	background-image: url(images/ui-icons_454545_256x240.png)/*{iconsHover}*/;
+	background-image: http://bit.ly/1cAaaug ;
 }
 .ui-state-active .ui-icon {
-	background-image: url(images/ui-icons_454545_256x240.png)/*{iconsActive}*/;
+	background-image: http://bit.ly/1cAaaug ;
 }
 .ui-state-highlight .ui-icon {
 	background-image: url(images/ui-icons_2e83ff_256x240.png)/*{iconsHighlight}*/;
