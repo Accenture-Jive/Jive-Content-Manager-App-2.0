@@ -2,13 +2,21 @@
 function fromPlace() {
  console.log($("#from_place").find('option:selected').val());
  var val = $("#from_place").find('option:selected').val();
+ if(val == "Space")
+placeType = "space";
+else if(val == "Group")
+placeType ="group";
+else
+placeType = "project";
  fromSpaceRequest();
+ 
+ 
 }
 
 function fromSpaceRequest() {
   
   var params = {
-        type: "space",
+        type: ""+placeType,
         success: (function (data) {
             //consolelog("DATA: "+JSON.stringify(data));
 			
