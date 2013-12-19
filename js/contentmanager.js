@@ -8,20 +8,19 @@ else if(val == "Group")
 placeType ="group";
 else
 placeType = "project";
- fromSpaceRequest();
- 
- $("#from_place").find('option:first').attr('selected', 'selected');
+fromSpaceRequest();
+$("#from_place").find('option:first').attr('selected', 'selected');
 }
 
-function fromSpaceRequest() {
+function fromSpaceRequest(placeType) {
   
   var params = {
-        type: ""+placeType,
+        type: placeType,
         success: (function (data) {
             //consolelog("DATA: "+JSON.stringify(data));
 			
             var from_place_name = data.name;
-			alert(from_place_name);
+			console.log(from_place_name);
         }),
         error: handleResponse
     };
