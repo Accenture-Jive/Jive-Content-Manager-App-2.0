@@ -1,5 +1,6 @@
 
 function fromPlace() {
+var placeType="";
  console.log($("#from_place").find('option:selected').val());
  var val = $("#from_place").find('option:selected').val();
  if(val == "Space")
@@ -8,14 +9,15 @@ else if(val == "Group")
 placeType ="group";
 else
 placeType = "project";
-fromSpaceRequest();
+var place-name = fromSpaceRequest();
+console.log("place name : "+place-name);
 $("#from_place").find('option:first').attr('selected', 'selected');
 }
 
-function fromSpaceRequest(placeType) {
+function fromSpaceRequest() {
   
   var params = {
-        type: placeType,
+        type: ""+placeType,
         success: (function (data) {
             //consolelog("DATA: "+JSON.stringify(data));
 			
@@ -26,6 +28,7 @@ function fromSpaceRequest(placeType) {
     };
     // calling the OSAPI with the params. final call.
     osapi.jive.corev3.places.requestPicker(params);
+	return from_place_name;
 }
 
 function handleResponse(data) {
