@@ -10,7 +10,7 @@ else
 placeType = "project";
  fromSpaceRequest();
  
- $("#dropdown").find('option:first').attr('selected', 'selected');
+ $("#from_place").find('option:first').attr('selected', 'selected');
 }
 
 function fromSpaceRequest() {
