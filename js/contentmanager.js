@@ -15,13 +15,13 @@ $("#from_place").find('option:first').attr('selected', 'selected');
 }
 
 function fromSpaceRequest() {
-  
+  var from_place_name = "";
   var params = {
         type: ""+placeType,
         success: (function (data) {
             //consolelog("DATA: "+JSON.stringify(data));
 			
-            var from_place_name = data.name;
+            from_place_name = data.name;
 			console.log(from_place_name);
         }),
         error: handleResponse
