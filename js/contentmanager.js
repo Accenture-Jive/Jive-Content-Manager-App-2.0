@@ -23,14 +23,19 @@ function fromSpaceRequest(selectedCombo,val,placeType) {
 			
             place_name = data.name;
 			console.log(place_name);
-			var  fromLabelStr = $('#'+selectedCombo).text();
-			console.log("fromLabelStr: "+fromLabelStr);
-			fromLabelStr = fromLabelStr.substring(fromLabelStr.indexOf(":")+1,fromLabelStr.length);
-			console.log("sub fromLabelStr: "+fromLabelStr);
 			
-			if(place_name!='' && place_name!=fromLabelStr && selectedCombo == "fromPlace")
+			/*
+			var  fromLabelStr = $('#fromLabel').text();
+			fromLabelStr = fromLabelStr.substring(fromLabelStr.indexOf(":")+1,fromLabelStr.length);
+			console.log(fromLabelStr);
+			var  toLabelStr = $('#toLabel').text();
+			toLabelStr = fromLabelStr.substring(toLabelStr.indexOf(":")+1,toLabelStr.length);
+			console.log(toLabelStr);
+			*/
+			
+			if(place_name!='' && selectedCombo == "fromPlace")
                $('#fromLabel').text(val+" : "+place_name);		
-			  else if(place_name!='' && place_name!=fromLabelStr && selectedCombo == "toPlace")
+			  else if(place_name!=''&& selectedCombo == "toPlace")
                $('#toLabel').text(val+" : "+place_name);
         }),
         error: handleResponse
