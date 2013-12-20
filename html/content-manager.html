@@ -34,10 +34,10 @@
 	<table>	
 <tr>
 <td>
-<label id="fromlabel" style = "font-size:12px;width:auto;float:left;margin:-20px 0px 0px 270px;">Place: Place Name</label>
+<label id="fromLabel" style = "font-size:12px;width:auto;float:left;margin:-20px 0px 0px 270px;">Place: Place Name</label>
 </td>
 <td>
-<label id="tolabel" style = "font-size:12px;width:auto;float:left;margin:-20px 0px 0px 270px;">Place: Place Name</label>
+<label id="toLabel" style = "font-size:12px;width:auto;float:left;margin:-20px 0px 0px 270px;">Place: Place Name</label>
 </td>
 </tr>
 <tr>
@@ -52,7 +52,7 @@
 <tr>
 <td>
 <br/>
-<select name="source_place" id="from_place" onchange="javascript:fromPlace();" style = "font-size:12px;width:120px;margin:0px 0px 0px 270px;">  
+<select name="source_place" id="fromPlace" onchange="javascript:fromPlace(this);" style = "font-size:12px;width:120px;margin:0px 0px 0px 270px;">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -61,7 +61,7 @@
 </td>
 <td>
 <br/>
-<select name="source_place" id="to_place" onchange="javascript:fromPlace();" style = "font-size:12px;width:120px;margin:0px 0px 0px 270px;">  
+<select name="source_place" id="toPlace" onchange="javascript:fromPlace(this);" style = "font-size:12px;width:120px;margin:0px 0px 0px 270px;">  
 <option value="select_to">Select Place</option>
 <option value="to_space">Select Space</option>
 <option value="to_group">Select Group</option>
