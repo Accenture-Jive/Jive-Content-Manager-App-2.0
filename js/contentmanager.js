@@ -23,8 +23,8 @@ function fromSpaceRequest(placeType) {
 			
             from_place_name = data.name;
 			console.log(from_place_name);
-			if(placeName!='')
-               $('#fromlabel').text(placeName);
+			if(from_place_name!='')
+               $('#fromlabel').text(from_place_name);
         }),
         error: handleResponse
     };
