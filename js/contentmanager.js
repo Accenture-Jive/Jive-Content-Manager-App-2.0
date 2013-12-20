@@ -10,7 +10,7 @@ placeType ="group";
 else
 placeType = "project";
 var placeName = fromSpaceRequest(obj.id,val,placeType);
-$("#fromPlace").find('option:first').attr('selected', 'selected');
+$("#"+obj.id).find('option:first').attr('selected', 'selected');
 console.log("place name : "+placeName);
 }
 
