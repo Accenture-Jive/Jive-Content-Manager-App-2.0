@@ -12,8 +12,6 @@ placeType = "project";
 var placeName = fromSpaceRequest(placeType);
 $("#from_place").find('option:first').attr('selected', 'selected');
 console.log("place name : "+placeName);
-if(placeName!='')
-$('#fromlabel').text(placeName);
 }
 
 function fromSpaceRequest(placeType) {
@@ -25,6 +23,8 @@ function fromSpaceRequest(placeType) {
 			
             from_place_name = data.name;
 			console.log(from_place_name);
+			if(placeName!='')
+               $('#fromlabel').text(placeName);
         }),
         error: handleResponse
     };
