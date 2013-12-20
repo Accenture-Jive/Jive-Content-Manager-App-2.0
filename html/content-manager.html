@@ -52,7 +52,7 @@
 <tr>
 <td>
 <br/>
-<select name="source_place" id="fromPlace" onchange="javascript:getPlace(this);" style = "font-size:12px;width:120px;margin:0px 0px 0px 270px;">  
+<select name="source_place" id="fromPlace" onchange="javascript:getPlace(this);" class="mySelect">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -61,7 +61,7 @@
 </td>
 <td>
 <br/>
-<select name="source_place" id="toPlace" onchange="javascript:getPlace(this);" style = "font-size:12px;width:120px;margin:0px 0px 0px 270px;">  
+<select name="source_place" id="toPlace" onchange="javascript:getPlace(this);" class="mySelect">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -110,5 +110,10 @@ font-size:12px;width:150px;
 float:left;margin:-20px 0px 0px 270px;
 /*overflow:hidden;text-overflow:ellipsis;white-space:nowrap;*/
 }
+select.mySelect
+{
+font-size:12px;width:120px;margin:0px 0px 0px 270px;
+}
+
 </style>
 </html>
