@@ -30,46 +30,21 @@
 <div id="accordion">
 	<h3>Copy</h3>
 	<div>
-
-	<table>	
-<tr>
-<td>
-<label id="fromlabel" style = "font-size:12px;width:auto;float:left;margin:-20px 0px 0px 270px;">Place: Place Name</label>
-</td>
-<td>
-<label id="tolabel" style = "font-size:12px;width:auto;float:left;margin:-20px 0px 0px 270px;">Place: Place Name</label>
-</td>
-</tr>
-<tr>
-<br/><br/>
-<td>	
-<label id="from_label" style = "font-size:12px;width:120px;margin:0px 0px 0px 290px;">Copy From:</label>
-</td>
-<td>
-<label id="to_label" style="font-size:12px;width:120px;margin:0px 0px 0px 295px;">Copy To:</label>
-</td>
-</tr>
-<tr>
-<td>
-<br/>
-<select name="source_place" id="from_place" onchange="javascript:fromPlace();" style = "font-size:12px;width:120px;margin:0px 0px 0px 270px;">  
+	
+<label id="from_label" style = "font-size:12px;width:120px;margin:0px 0px 0px 200px;">Copy From:</label>	
+<select name="source_place" id="from_place" onchange="javascript:fromPlace();" style = "font-size:12px;width:120px;margin:50px 0px 0px 5px;">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
 <option value="Project">Select Project</option>
 </select>
-</td>
-<td>
-<br/>
-<select name="source_place" id="to_place" onchange="javascript:toPlace();" style = "font-size:12px;width:120px;margin:0px 0px 0px 270px;">  
-<option value="select_to">Select Place</option>
-<option value="to_space">Select Space</option>
-<option value="to_group">Select Group</option>
-<option value="to_project">Select Project</option>
+<label id="to_label" style="font-size:12px;width:120px;margin:0px 0px 0px 200px;">Copy To:</label>
+<select name="source_place" id="to_place" onchange="javascript:toPlace();" style = "font-size:12px;width:120px;margin:50px 0px 0px 5px;">  
+<option value="Select Place">Select Place</option>
+<option value="Select Space">Select Space</option>
+<option value="Select Group">Select Group</option>
+<option value="Select Project">Select Project</option>
 </select>
-</td>
-</tr>
-</table>
 
 	</div>
 	<h3>Move</h3>

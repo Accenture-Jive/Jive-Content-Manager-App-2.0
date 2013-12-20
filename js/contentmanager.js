@@ -9,9 +9,11 @@ else if(val == "Group")
 placeType ="group";
 else
 placeType = "project";
-var placeNname = fromSpaceRequest(placeType);
-console.log("place name : "+placeNname);
+var placeName = fromSpaceRequest(placeType);
 $("#from_place").find('option:first').attr('selected', 'selected');
+console.log("place name : "+placeName);
+if(placeName!='')
+$('#fromlabel').text(placeName);
 }
 
 function fromSpaceRequest(placeType) {
