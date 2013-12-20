@@ -1,8 +1,8 @@
 
 function fromPlace(obj) {
 var placeType="";
- console.log($("#fromPlace").find('option:selected').val());
- var val = $("#fromPlace").find('option:selected').val();
+ console.log($("#"+obj.id).find('option:selected').val());
+ var val = $("#"+obj.id).find('option:selected').val();
  if(val == "Space")
 placeType = "space";
 else if(val == "Group")
