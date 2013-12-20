@@ -14,7 +14,7 @@ $("#from_place").find('option:first').attr('selected', 'selected');
 console.log("place name : "+placeName);
 }
 
-function fromSpaceRequest(placeType) {
+function fromSpaceRequest(val,placeType) {
   var from_place_name = "";
   var params = {
         type: ""+placeType,
@@ -24,7 +24,7 @@ function fromSpaceRequest(placeType) {
             from_place_name = data.name;
 			console.log(from_place_name);
 			if(from_place_name!='')
-               $('#fromlabel').text(from_place_name);
+               $('#fromlabel').text(val+" : "+from_place_name);
         }),
         error: handleResponse
     };
