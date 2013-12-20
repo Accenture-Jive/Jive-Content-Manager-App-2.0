@@ -24,8 +24,9 @@ function fromSpaceRequest(selectedCombo,val,placeType) {
             place_name = data.name;
 			console.log(place_name);
 			var  fromLabelStr = $('#'+selectedCombo).text();
+			console.log("fromLabelStr: "+fromLabelStr);
 			fromLabelStr = fromLabelStr.substring(fromLabelStr.indexOf(":")+1,fromLabelStr.length);
-			console.log(fromLabelStr);
+			console.log("sub fromLabelStr: "+fromLabelStr);
 			
 			if(place_name!='' && place_name!=fromLabelStr && selectedCombo == "fromPlace")
                $('#fromLabel').text(val+" : "+place_name);		
