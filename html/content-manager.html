@@ -121,19 +121,19 @@
 	<table>	
 <tr>
 <td>
-<label id="fromLabel" class="myLabel">Place: Place Name</label>
+<label id="fromLabel" class="deleteLabel">Place: Place Name</label>
 </td>
 </tr>
 <tr>
 <br/><br/>
 <td>	
-<label id="from_label" style = "font-size:12px;width:120px;margin:0px 0px 0px 200px;">Delete From:</label>
+<label id="from_label" style = "font-size:12px;width:120px;margin:0px 0px 0px 450px;">Delete From:</label>
 </td>
 </tr>
 <tr>
 <td>
 <br/>
-<select name="source_place" id="fromPlace" onchange="javascript:getPlace(this);" class="mySelect">  
+<select name="source_place" id="fromPlace" onchange="javascript:getPlace(this);" class="deleteSelect">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -174,5 +174,15 @@ select.mySelect
 font-size:12px;width:120px;margin:0px 0px 0px 200px;
 }
 
+label.deleteLabel
+{
+font-size:12px;width:250px;
+float:left;margin:-20px 0px 0px 450px;
+/*overflow:hidden;text-overflow:ellipsis;white-space:nowrap;*/
+}
+select.deleteSelect
+{
+font-size:12px;width:120px;margin:0px 0px 0px 450px;
+}
 </style>
 </html>
