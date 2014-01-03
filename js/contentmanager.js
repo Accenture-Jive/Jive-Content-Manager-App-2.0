@@ -146,6 +146,40 @@ function fromUploadSpaceRequest(selectedCombo,val,placeType) {
 }
 //end upload
 
+//start download
+function getDownloadPlace(obj) {
+var placeType="";
+ console.log($("#"+obj.id).find('option:selected').val());
+ var val = $("#"+obj.id).find('option:selected').val();
+ if(val == "Space")
+placeType = "space";
+else if(val == "Group")
+placeType ="group";
+else
+placeType = "project";
+var placeName = fromDownloadSpaceRequest(obj.id,val,placeType);
+$("#"+obj.id).find('option:first').attr('selected', 'selected');
+console.log("place name : "+placeName);
+}
+
+function fromDownloadSpaceRequest(selectedCombo,val,placeType) {
+  var place_name = "";
+  var params = {
+        type: ""+placeType,
+        success: (function (data) {
+            //consolelog("DATA: "+JSON.stringify(data));			
+            place_name = data.name;
+			 if(place_name!='' && selectedCombo == "fromDownloadPlace")
+               $('#fromDownloadLabel').text(val+" : "+place_name);
+        }),
+        error: handleResponse
+    };
+    // calling the OSAPI with the params. final call.
+    osapi.jive.corev3.places.requestPicker(params);
+	return place_name;
+}
+//end download
+
 function handleResponse(data) {
     alert("Error in Application..!!");
     console.log(data);
