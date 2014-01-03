@@ -14,6 +14,21 @@ var placeName = fromSpaceRequest(obj.id,val,placeType);
 $("#"+obj.id).find('option:first').attr('selected', 'selected');
 console.log("place name : "+placeName);
 }
+function getMovePlace(obj) {
+var placeType="";
+ console.log($("#"+obj.id).find('option:selected').val());
+ var val = $("#"+obj.id).find('option:selected').val();
+ alert("val: "+val);
+ if(val == "Space")
+placeType = "space";
+else if(val == "Group")
+placeType ="group";
+else
+placeType = "project";
+var placeName = fromSpaceRequest(obj.id,val,placeType);
+$("#"+obj.id).find('option:first').attr('selected', 'selected');
+console.log("place name : "+placeName);
+}
 
 function fromSpaceRequest(selectedCombo,val,placeType) {
   var place_name = "";
@@ -38,6 +53,10 @@ function fromSpaceRequest(selectedCombo,val,placeType) {
                $('#fromLabel').text(val+" : "+place_name);		
 			  else if(place_name!=''&& selectedCombo == "toPlace")
                $('#toLabel').text(val+" : "+place_name);
+			   else if(place_name!='' && selectedCombo == "fromMovePlace")
+               $('#fromMoveLabel').text(val+" : "+place_name);		
+			  else if(place_name!=''&& selectedCombo == "toMovePlace")
+               $('#toMoveLabel').text(val+" : "+place_name);
         }),
         error: handleResponse
     };
