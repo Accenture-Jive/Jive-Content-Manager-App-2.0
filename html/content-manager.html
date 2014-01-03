@@ -117,12 +117,32 @@
 	</div>
 	<h3>Delete</h3>
 	<div>
-		<p>Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis. Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui. </p>
-		<ul>
-			<li>List item one</li>
-			<li>List item two</li>
-			<li>List item three</li>
-		</ul>
+
+	<table>	
+<tr>
+<td>
+<label id="fromLabel" class="myLabel">Place: Place Name</label>
+</td>
+</tr>
+<tr>
+<br/><br/>
+<td>	
+<label id="from_label" style = "font-size:12px;width:120px;margin:0px 0px 0px 200px;">Delete From:</label>
+</td>
+</tr>
+<tr>
+<td>
+<br/>
+<select name="source_place" id="fromPlace" onchange="javascript:getPlace(this);" class="mySelect">  
+<option value="Place">Select Place</option>
+<option value="Space">Select Space</option>
+<option value="Group">Select Group</option>
+<option value="Project">Select Project</option>
+</select>
+</td>
+</tr>
+</table>
+
 	</div>
 	<h3>Upload</h3>
 	<div>
