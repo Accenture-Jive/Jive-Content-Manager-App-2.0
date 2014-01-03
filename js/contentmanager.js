@@ -14,21 +14,6 @@ var placeName = fromSpaceRequest(obj.id,val,placeType);
 $("#"+obj.id).find('option:first').attr('selected', 'selected');
 console.log("place name : "+placeName);
 }
-function getMovePlace(obj) {
-var placeType="";
- console.log($("#"+obj.id).find('option:selected').val());
- var val = $("#"+obj.id).find('option:selected').val();
- alert("val: "+val);
- if(val == "Space")
-placeType = "space";
-else if(val == "Group")
-placeType ="group";
-else
-placeType = "project";
-var placeName = fromSpaceRequest(obj.id,val,placeType);
-$("#"+obj.id).find('option:first').attr('selected', 'selected');
-console.log("place name : "+placeName);
-}
 
 function fromSpaceRequest(selectedCombo,val,placeType) {
   var place_name = "";
@@ -53,7 +38,49 @@ function fromSpaceRequest(selectedCombo,val,placeType) {
                $('#fromLabel').text(val+" : "+place_name);		
 			  else if(place_name!=''&& selectedCombo == "toPlace")
                $('#toLabel').text(val+" : "+place_name);
-			   else if(place_name!='' && selectedCombo == "fromMovePlace")
+        }),
+        error: handleResponse
+    };
+    // calling the OSAPI with the params. final call.
+    osapi.jive.corev3.places.requestPicker(params);
+	return place_name;
+}
+function getMovePlace(obj) {
+var placeType="";
+ console.log($("#"+obj.id).find('option:selected').val());
+ var val = $("#"+obj.id).find('option:selected').val();
+ alert("val: "+val);
+ if(val == "Space")
+placeType = "space";
+else if(val == "Group")
+placeType ="group";
+else
+placeType = "project";
+var placeName = fromMoveSpaceRequest(obj.id,val,placeType);
+$("#"+obj.id).find('option:first').attr('selected', 'selected');
+console.log("place name : "+placeName);
+}
+
+function fromMoveSpaceRequest(selectedCombo,val,placeType) {
+  var place_name = "";
+  var params = {
+        type: ""+placeType,
+        success: (function (data) {
+            //consolelog("DATA: "+JSON.stringify(data));
+			
+            place_name = data.name;
+			console.log(place_name);
+			
+			/*
+			var  fromLabelStr = $('#fromLabel').text();
+			fromLabelStr = fromLabelStr.substring(fromLabelStr.indexOf(":")+1,fromLabelStr.length);
+			console.log(fromLabelStr);
+			var  toLabelStr = $('#toLabel').text();
+			toLabelStr = fromLabelStr.substring(toLabelStr.indexOf(":")+1,toLabelStr.length);
+			console.log(toLabelStr);
+			*/
+			
+			 if(place_name!='' && selectedCombo == "fromMovePlace")
                $('#fromMoveLabel').text(val+" : "+place_name);		
 			  else if(place_name!=''&& selectedCombo == "toMovePlace")
                $('#toMoveLabel').text(val+" : "+place_name);
