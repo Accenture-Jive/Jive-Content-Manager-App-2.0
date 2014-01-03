@@ -3,6 +3,7 @@ function getPlace(obj) {
 var placeType="";
  console.log($("#"+obj.id).find('option:selected').val());
  var val = $("#"+obj.id).find('option:selected').val();
+ alert("val: "+val);
  if(val == "Space")
 placeType = "space";
 else if(val == "Group")
