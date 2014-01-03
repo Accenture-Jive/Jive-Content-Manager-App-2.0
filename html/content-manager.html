@@ -74,7 +74,46 @@
 	</div>
 	<h3>Move</h3>
 	<div>
-		<p>Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna. </p>
+	<table>	
+<tr>
+<td>
+<label id="fromLabel" class="myLabel">Place: Place Name</label>
+</td>
+<td>
+<label id="toLabel" class="myLabel">Place: Place Name</label>
+</td>
+</tr>
+<tr>
+<br/><br/>
+<td>	
+<label id="from_label" style = "font-size:12px;width:120px;margin:0px 0px 0px 200px;">Move From:</label>
+</td>
+<td>
+<label id="to_label" style="font-size:12px;width:120px;margin:0px 0px 0px 205px;">Move To:</label>
+</td>
+</tr>
+<tr>
+<td>
+<br/>
+<select name="source_place" id="fromPlace" onchange="javascript:getPlace(this);" class="mySelect">  
+<option value="Place">Select Place</option>
+<option value="Space">Select Space</option>
+<option value="Group">Select Group</option>
+<option value="Project">Select Project</option>
+</select>
+</td>
+<td>
+<br/>
+<select name="source_place" id="toPlace" onchange="javascript:getPlace(this);" class="mySelect">  
+<option value="Place">Select Place</option>
+<option value="Space">Select Space</option>
+<option value="Group">Select Group</option>
+<option value="Project">Select Project</option>
+</select>
+</td>
+</tr>
+</table>
+
 	</div>
 	<h3>Delete</h3>
 	<div>
