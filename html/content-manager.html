@@ -227,8 +227,31 @@
 </div>
 	<h3>Manage Categories</h3>
 	<div>
-		<p>Cras dictum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia mauris vel est. </p><p>Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
-	</div>
+	<table>	
+<tr>
+<td>
+<label id="fromCategoryLabel" class="deleteLabel">Place: Place Name</label>
+</td>
+</tr>
+<tr>
+<br/><br/>
+<td>	
+<label id="from_label" style = "font-size:12px;width:120px;margin:0px 0px 0px 450px;">Select a Category:</label>
+</td>
+</tr>
+<tr>
+<td>
+<br/>
+<select name="source_place" id="fromCategoryPlace" onchange="javascript:getCategoryPlace(this);" class="deleteSelect">  
+<option value="Place">Select Place</option>
+<option value="Space">Select Space</option>
+<option value="Group">Select Group</option>
+<option value="Project">Select Project</option>
+</select>
+</td>
+</tr>
+</table>
+</div>
 </div>
 </body>
 <style type="text/css">
