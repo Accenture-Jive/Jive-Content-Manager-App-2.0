@@ -121,7 +121,7 @@
 	<table>	
 <tr>
 <td>
-<label id="fromDeleteLabel" class="deleteLabel">Place: Place Name</label>
+<label id="fromDeleteLabel" class="showLabel">Place: Place Name</label>
 </td>
 </tr>
 <tr>
@@ -133,7 +133,7 @@
 <tr>
 <td>
 <br/>
-<select name="source_place" id="fromDeletePlace" onchange="javascript:getDeletePlace(this);" class="deleteSelect">  
+<select name="source_place" id="fromDeletePlace" onchange="javascript:getDeletePlace(this);" class="showSelect">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -149,7 +149,7 @@
 	<table>	
 <tr>
 <td>
-<label id="fromUploadLabel" class="deleteLabel">Place: Place Name</label>
+<label id="fromUploadLabel" class="showLabel">Place: Place Name</label>
 </td>
 </tr>
 <tr>
@@ -161,7 +161,7 @@
 <tr>
 <td>
 <br/>
-<select name="source_place" id="fromUploadPlace" onchange="javascript:getUploadPlace(this);" class="deleteSelect">  
+<select name="source_place" id="fromUploadPlace" onchange="javascript:getUploadPlace(this);" class="showSelect">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -176,7 +176,7 @@
 	<table>	
 <tr>
 <td>
-<label id="fromDownloadLabel" class="deleteLabel">Place: Place Name</label>
+<label id="fromDownloadLabel" class="showLabel">Place: Place Name</label>
 </td>
 </tr>
 <tr>
@@ -188,7 +188,7 @@
 <tr>
 <td>
 <br/>
-<select name="source_place" id="fromDownloadPlace" onchange="javascript:getDownloadPlace(this);" class="deleteSelect">  
+<select name="source_place" id="fromDownloadPlace" onchange="javascript:getDownloadPlace(this);" class="showSelect">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -203,7 +203,7 @@
 	<table>	
 <tr>
 <td>
-<label id="fromTagLabel" class="deleteLabel">Place: Place Name</label>
+<label id="fromTagLabel" class="showLabel">Place: Place Name</label>
 </td>
 </tr>
 <tr>
@@ -215,7 +215,7 @@
 <tr>
 <td>
 <br/>
-<select name="source_place" id="fromTagPlace" onchange="javascript:getTagPlace(this);" class="deleteSelect">  
+<select name="source_place" id="fromTagPlace" onchange="javascript:getTagPlace(this);" class="showSelect">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -230,7 +230,7 @@
 	<table>	
 <tr>
 <td>
-<label id="fromCategoryLabel" class="deleteLabel">Place: Place Name</label>
+<label id="fromCategoryLabel" class="showLabel">Place: Place Name</label>
 </td>
 </tr>
 <tr>
@@ -242,7 +242,7 @@
 <tr>
 <td>
 <br/>
-<select name="source_place" id="fromCategoryPlace" onchange="javascript:getCategoryPlace(this);" class="deleteSelect">  
+<select name="source_place" id="fromCategoryPlace" onchange="javascript:getCategoryPlace(this);" class="showSelect">  
 <option value="Place">Select Place</option>
 <option value="Space">Select Space</option>
 <option value="Group">Select Group</option>
@@ -266,13 +266,13 @@ select.mySelect
 font-size:12px;width:120px;margin:0px 0px 0px 200px;
 }
 
-label.deleteLabel
+label.showLabel
 {
 font-size:12px;width:250px;
 float:left;margin:-20px 0px 0px 450px;
 /*overflow:hidden;text-overflow:ellipsis;white-space:nowrap;*/
 }
-select.deleteSelect
+select.showSelect
 {
 font-size:12px;width:120px;margin:0px 0px 0px 450px;
 }
