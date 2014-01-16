@@ -19,7 +19,7 @@ function fromSpaceRequest(selectedCombo,val,placeType) {
   var params = {
         type: ""+placeType,
         success: (function (data) {
-            //consolelog("DATA: "+JSON.stringify(data));			
+            //console.log("DATA: "+JSON.stringify(data));			
             place_name = data.name;
 			/*
 			var  fromLabelStr = $('#fromLabel').text();
@@ -63,7 +63,7 @@ function fromMoveSpaceRequest(selectedCombo,val,placeType) {
   var params = {
         type: ""+placeType,
         success: (function (data) {
-            //consolelog("DATA: "+JSON.stringify(data));			
+            //console.log("DATA: "+JSON.stringify(data));			
             place_name = data.name;
 			 if(place_name!='' && selectedCombo == "fromMovePlace")
                $('#fromMoveLabel').text(val+" : "+place_name);		
@@ -99,7 +99,7 @@ function fromDeleteSpaceRequest(selectedCombo,val,placeType) {
   var params = {
         type: ""+placeType,
         success: (function (data) {
-            //consolelog("DATA: "+JSON.stringify(data));			
+            //console.log("DATA: "+JSON.stringify(data));			
             place_name = data.name;
 			 if(place_name!='' && selectedCombo == "fromDeletePlace")
                $('#fromDeleteLabel').text(val+" : "+place_name);
@@ -133,7 +133,7 @@ function fromUploadSpaceRequest(selectedCombo,val,placeType) {
   var params = {
         type: ""+placeType,
         success: (function (data) {
-            //consolelog("DATA: "+JSON.stringify(data));			
+            //console.log("DATA: "+JSON.stringify(data));			
             place_name = data.name;
 			 if(place_name!='' && selectedCombo == "fromUploadPlace")
                $('#fromUploadLabel').text(val+" : "+place_name);
@@ -167,7 +167,7 @@ function fromDownloadSpaceRequest(selectedCombo,val,placeType) {
   var params = {
         type: ""+placeType,
         success: (function (data) {
-            //consolelog("DATA: "+JSON.stringify(data));			
+            //console.log("DATA: "+JSON.stringify(data));			
             place_name = data.name;
 			 if(place_name!='' && selectedCombo == "fromDownloadPlace")
                $('#fromDownloadLabel').text(val+" : "+place_name);
@@ -201,7 +201,7 @@ function fromTagSpaceRequest(selectedCombo,val,placeType) {
   var params = {
         type: ""+placeType,
         success: (function (data) {
-            //consolelog("DATA: "+JSON.stringify(data));			
+            //console.log("DATA: "+JSON.stringify(data));			
             place_name = data.name;
 			 if(place_name!='' && selectedCombo == "fromTagPlace")
                $('#fromTagLabel').text(val+" : "+place_name);
@@ -235,7 +235,7 @@ function fromCategorySpaceRequest(selectedCombo,val,placeType) {
   var params = {
         type: ""+placeType,
         success: (function (data) {
-            //consolelog("DATA: "+JSON.stringify(data));			
+            //console.log("DATA: "+JSON.stringify(data));			
             place_name = data.name;
 			 if(place_name!='' && selectedCombo == "fromCategoryPlace")
                $('#fromCategoryLabel').text(val+" : "+place_name);
